@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="260"
+   height="260"
+   viewBox="0 0 260 260"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="tilemap-ink.svg"
+   inkscape:export-filename="tilemap.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="2.6732296"
+     inkscape:cx="138.78344"
+     inkscape:cy="132.61113"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#000000"
+       empopacity="0.30196078"
+       color="#000000"
+       opacity="0.14901961"
+       empspacing="30"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g50"
+       inkscape:label="grid"
+       transform="translate(-131.3147,-66.402864)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="289.86362"
+         y="203.24078"
+         id="text2"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           x="289.86362"
+           y="203.24078"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         x="336.92896"
+         y="294.40488"
+         id="text26"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan26"
+           x="336.92896"
+           y="294.40488"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="289.86362"
+         y="294.40488"
+         id="text27"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan27"
+           x="289.86362"
+           y="294.40488"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="242.79829"
+         y="294.40488"
+         id="text28"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan28"
+           x="242.79829"
+           y="294.40488"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="195.73297"
+         y="294.40488"
+         id="text29"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan29"
+           x="195.73297"
+           y="294.40488"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="148.66763"
+         y="294.40488"
+         id="text30"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan30"
+           x="148.66763"
+           y="294.40488"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="336.92896"
+         y="248.82285"
+         id="text31"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan31"
+           x="336.92896"
+           y="248.82285"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#de6868;fill-opacity:1;stroke:#de6868;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         x="289.86362"
+         y="248.82285"
+         id="text32"
+         inkscape:label="enemy"><tspan
+           sodipodi:role="line"
+           id="tspan32"
+           x="289.86362"
+           y="248.82285"
+           style="fill:#de6868;fill-opacity:1;stroke:#de6868;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[@]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="242.79829"
+         y="248.82285"
+         id="text33"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan33"
+           x="242.79829"
+           y="248.82285"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="195.73297"
+         y="248.82285"
+         id="text34"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan34"
+           x="195.73297"
+           y="248.82285"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="148.66763"
+         y="248.82285"
+         id="text35"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan35"
+           x="148.66763"
+           y="248.82285"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="336.92896"
+         y="203.24078"
+         id="text36"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan36"
+           x="336.92896"
+           y="203.24078"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         x="148.66763"
+         y="112.07666"
+         id="text37"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan37"
+           x="148.66763"
+           y="112.07666"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="242.79829"
+         y="203.24078"
+         id="text38"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan38"
+           x="242.79829"
+           y="203.24078"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="195.73297"
+         y="203.24078"
+         id="text39"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan39"
+           x="195.73297"
+           y="203.24078"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="148.66763"
+         y="203.24078"
+         id="text40"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan40"
+           x="148.66763"
+           y="203.24078"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="336.92896"
+         y="157.65872"
+         id="text41"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan41"
+           x="336.92896"
+           y="157.65872"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="289.86362"
+         y="157.65872"
+         id="text42"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan42"
+           x="289.86362"
+           y="157.65872"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="242.79829"
+         y="157.65872"
+         id="text43"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan43"
+           x="242.79829"
+           y="157.65872"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="195.73297"
+         y="157.65872"
+         id="text44"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan44"
+           x="195.73297"
+           y="157.65872"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="148.66763"
+         y="157.65872"
+         id="text45"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan45"
+           x="148.66763"
+           y="157.65872"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="336.92896"
+         y="112.07666"
+         id="text46"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan46"
+           x="336.92896"
+           y="112.07666"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="289.86362"
+         y="112.07666"
+         id="text47"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan47"
+           x="289.86362"
+           y="112.07666"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:none;stroke-width:1.5;stroke-dasharray:none"
+         x="242.79829"
+         y="112.07666"
+         id="text48"
+         inkscape:label="cell"><tspan
+           sodipodi:role="line"
+           id="tspan48"
+           x="242.79829"
+           y="112.07666"
+           style="fill:#688ede;fill-opacity:1;stroke:#688ede;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[-]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5037px;font-family:'Hack Nerd Font Mono';-inkscape-font-specification:'Hack Nerd Font Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#6fde68;fill-opacity:1;stroke:#6fde68;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         x="195.73297"
+         y="112.07666"
+         id="text49"
+         inkscape:label="hero"><tspan
+           sodipodi:role="line"
+           id="tspan49"
+           x="195.73297"
+           y="112.07666"
+           style="fill:#6fde68;fill-opacity:1;stroke:#6fde68;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">[&amp;]</tspan></text>
+    </g>
+  </g>
+</svg>
