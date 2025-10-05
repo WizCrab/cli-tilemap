@@ -1,6 +1,13 @@
 [package]
 name = "cli-tilemap"
 version = "0.1.0"
+description = "Library, that provides basic functionality of Tilemap for CLI-based games!"
+repository = "https://github.com/WizCrab/cli-tilemap"
+keywords = ["tilemap", "grid", "field", "cli", "2D"]
+categories = ["data-structures", "command-line-interface", "game-development"]
+exclude = ["target", "Cargo.lock"]
+readme = "README.md"
+license = "GPL-3.0"
 edition = "2024"
 
 [dependencies]
