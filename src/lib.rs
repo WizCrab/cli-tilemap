@@ -61,8 +61,10 @@ use crossterm::{
     execute,
     style::{Print, PrintStyledContent, StyledContent},
 };
-use grid_math::{Grid, GridMap};
+use grid_math::{Cell, Grid, GridMap};
 use std::{
+    collections::HashMap,
+    convert::From,
     fmt::Display,
     io,
     ops::{Deref, DerefMut},
@@ -131,7 +133,7 @@ pub struct Formatting {
     pub bottom_indent: u8,
 }
 
-/// implements default values for `Formatting`
+/// Implements default values for `Formatting`
 ///
 impl Default for Formatting {
     fn default() -> Self {
@@ -204,7 +206,7 @@ impl<T> TileMap<T>
 where
     T: Tile + Default,
 {
-    /// creates new `TileMap<T>` with the empty inner `GridMap<T>` of specified size,
+    /// Creates new `TileMap<T>` with the empty inner `GridMap<T>` of specified size,
     /// and with the defult `Formatting`
     ///
     /// For more info, visit `grid-math` crate docs
@@ -216,7 +218,7 @@ where
         }
     }
 
-    /// creates new `TileMap<T>` with the empty inner `GridMap<T>` of specified size,
+    /// Creates new `TileMap<T>` with the empty inner `GridMap<T>` of specified size,
     /// and with the given `Formatting`
     ///
     /// For more info, visit `grid-math` crate docs
@@ -228,7 +230,7 @@ where
         }
     }
 
-    /// draws the `TileMap<T>` to the given `stdout`, using the inner `Formatting` rules
+    /// Draws the `TileMap<T>` to the given `stdout`, using the inner `Formatting` rules
     ///
     /// # Examples
     ///
@@ -277,31 +279,30 @@ where
     }
 }
 
-/// implements `Display` trait for the `TileMap<T>` in the same way as the `draw` method works
-///
-/// # Examples
-///
-/// ```
-/// use cli_tilemap::{Tile, TileMap};
-/// use crossterm::style::{Stylize, StyledContent};
-/// use std::io::stdout;
-///
-/// #[derive(Default)]
-/// struct Empty;
-///
-/// impl Tile for Empty {
-///     fn tile(&self) -> StyledContent<&'static str> {
-///         "[-]".dark_grey().bold()
-///     }
-/// }
-///
-/// let mut map: TileMap<Empty> = TileMap::new(5, 5);
-/// println!("{map}");
-/// ```
 impl<T> Display for TileMap<T>
 where
     T: Tile + Default,
 {
+    /// Implements `fmt` method for the `TileMap<T>` in the same way as the `draw` method works
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use cli_tilemap::{Tile, TileMap};
+    /// use crossterm::style::{Stylize, StyledContent};
+    ///
+    /// #[derive(Default)]
+    /// struct Empty;
+    ///
+    /// impl Tile for Empty {
+    ///     fn tile(&self) -> StyledContent<&'static str> {
+    ///         "[-]".dark_grey().bold()
+    ///     }
+    /// }
+    ///
+    /// let mut map: TileMap<Empty> = TileMap::new(5, 5);
+    /// println!("{map}");
+    /// ```
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "{}", "\n".repeat(self.formatting.top_indent as usize))?;
         for row in self.grid().rows() {
@@ -318,34 +319,33 @@ where
     }
 }
 
-/// creates new empty `TileMap<T>` from the specified `Grid`
-///
-/// # Examples
-///
-/// ```
-/// use cli_tilemap::{Tile, TileMap};
-/// use crossterm::style::{Stylize, StyledContent};
-/// use grid_math::{Cell, Grid};
-/// use std::io::stdout;
-///
-/// #[derive(Default)]
-/// struct Empty;
-///
-/// impl Tile for Empty {
-///     fn tile(&self) -> StyledContent<&'static str> {
-///         "[-]".dark_grey().bold()
-///     }
-/// }
-///
-/// let cells = (Cell::new(2, 2), Cell::new(5, 5));
-/// let grid = Grid::from(cells);
-/// let mut map: TileMap<Empty> = TileMap::from(grid);
-/// assert_eq!(map.grid(), grid);
-/// ```
 impl<T> From<Grid> for TileMap<T>
 where
     T: Tile + Default,
 {
+    /// Creates new empty `TileMap<T>` from the specified `Grid`
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use cli_tilemap::{Tile, TileMap};
+    /// use crossterm::style::{Stylize, StyledContent};
+    /// use grid_math::{Cell, Grid};
+    ///
+    /// #[derive(Default)]
+    /// struct Empty;
+    ///
+    /// impl Tile for Empty {
+    ///     fn tile(&self) -> StyledContent<&'static str> {
+    ///         "[-]".dark_grey().bold()
+    ///     }
+    /// }
+    ///
+    /// let cells = (Cell::new(2, 2), Cell::new(5, 5));
+    /// let grid = Grid::from(cells);
+    /// let map: TileMap<Empty> = TileMap::from(grid);
+    /// assert_eq!(map.grid(), grid);
+    /// ```
     fn from(grid: Grid) -> Self {
         Self {
             formatting: Formatting::default(),
@@ -354,39 +354,102 @@ where
     }
 }
 
-/// creates `TileMap<T>` from the existing `GridMap<T>` where `T`: `Tile` + `Default`.
-///
-/// # Examples
-///
-/// ```
-/// use cli_tilemap::{Tile, TileMap};
-/// use crossterm::style::{Stylize, StyledContent};
-/// use grid_math::{Cell, GridMap};
-/// use std::io::stdout;
-///
-/// #[derive(Debug, Default, PartialEq, Eq)]
-/// struct Empty;
-///
-/// impl Tile for Empty {
-///     fn tile(&self) -> StyledContent<&'static str> {
-///         "[-]".dark_grey().bold()
-///     }
-/// }
-///
-/// let mut gridmap: GridMap<Empty> = GridMap::new(5, 5);
-/// let target = Cell::new(1, 2);
-/// gridmap.insert(target, Empty);
-/// let mut map: TileMap<Empty> = TileMap::from(gridmap);
-/// assert_eq!(map.get(&target), Some(&Empty));
-/// ```
 impl<T> From<GridMap<T>> for TileMap<T>
 where
     T: Tile + Default,
 {
+    /// Creates `TileMap<T>` from the existing `GridMap<T>` where `T`: `Tile` + `Default`
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use cli_tilemap::{Tile, TileMap};
+    /// use crossterm::style::{Stylize, StyledContent};
+    /// use grid_math::{Cell, GridMap};
+    ///
+    /// #[derive(Debug, Default, PartialEq, Eq)]
+    /// struct Empty;
+    ///
+    /// impl Tile for Empty {
+    ///     fn tile(&self) -> StyledContent<&'static str> {
+    ///         "[-]".dark_grey().bold()
+    ///     }
+    /// }
+    ///
+    /// let mut gridmap: GridMap<Empty> = GridMap::new(5, 5);
+    /// let target = Cell::new(1, 2);
+    /// gridmap.insert(target, Empty);
+    /// let map: TileMap<Empty> = TileMap::from(gridmap);
+    /// assert_eq!(map.get(&target), Some(&Empty));
+    /// ```
     fn from(gridmap: GridMap<T>) -> Self {
         Self {
             formatting: Formatting::default(),
             gridmap,
+        }
+    }
+}
+
+impl<T> From<(Grid, HashMap<Cell, T>)> for TileMap<T>
+where
+    T: Tile + Default,
+{
+    /// Creates `TileMap<T>` from the existing `HashMap<Cell, T>` and the given `Grid`
+    ///
+    /// # Panics
+    /// Panics if the given `HashMap<Cell, T>` contains `Cell`s that are not within the given `Grid`
+    /// This panic is a part of `grid-math` crate current state, error handling may change in the future
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use cli_tilemap::{Tile, TileMap};
+    /// use crossterm::style::{Stylize, StyledContent};
+    /// use grid_math::{Cell, Grid};
+    /// use std::collections::HashMap;
+    ///
+    /// #[derive(Debug, Default, PartialEq, Eq)]
+    /// struct Empty;
+    ///
+    /// impl Tile for Empty {
+    ///     fn tile(&self) -> StyledContent<&'static str> {
+    ///         "[-]".dark_grey().bold()
+    ///     }
+    /// }
+    ///
+    /// let grid = Grid::new(5, 5);
+    /// let mut hashmap: HashMap<Cell, Empty> = HashMap::new();
+    /// let target = Cell::new(1, 2);
+    /// hashmap.insert(target, Empty);
+    /// let map: TileMap<Empty> = TileMap::from((grid, hashmap));
+    /// assert_eq!(map.get(&target), Some(&Empty));
+    /// ```
+    ///
+    /// ```should_panic
+    /// use cli_tilemap::{Tile, TileMap};
+    /// use crossterm::style::{Stylize, StyledContent};
+    /// use grid_math::{Cell, Grid};
+    /// use std::collections::HashMap;
+    ///
+    /// #[derive(Debug, Default, PartialEq, Eq)]
+    /// struct Empty;
+    ///
+    /// impl Tile for Empty {
+    ///     fn tile(&self) -> StyledContent<&'static str> {
+    ///         "[-]".dark_grey().bold()
+    ///     }
+    /// }
+    ///
+    /// let grid = Grid::new(5, 5);
+    /// let mut hashmap: HashMap<Cell, Empty> = HashMap::new();
+    /// let target = Cell::new(7, 1);
+    /// hashmap.insert(target, Empty);
+    /// let map: TileMap<Empty> = TileMap::from((grid, hashmap)); // panic!
+    /// ```
+    fn from(data: (Grid, HashMap<Cell, T>)) -> Self {
+        Self {
+            formatting: Formatting::default(),
+            gridmap: GridMap::from(data),
         }
     }
 }
@@ -417,3 +480,43 @@ where
         &mut self.gridmap
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crossterm::style::Stylize;
+    use std::io::stdout;
+
+    // declare Entity enum
+    #[derive(Default, Debug)]
+    enum Entity {
+        Enemy,
+        Hero,
+        #[default]
+        Air,
+    }
+
+    // represent Entity as tile
+    impl Tile for Entity {
+        fn tile(&self) -> StyledContent<&'static str> {
+            match self {
+                Self::Air => "[-]".dark_grey().bold(),
+                Self::Hero => "[&]".green().bold(),
+                Self::Enemy => "[@]".red().bold(),
+            }
+        }
+    }
+
+    #[test]
+    fn draw_tilemap() {
+        // create 5x5 tilemap:
+        let mut map: TileMap<Entity> = TileMap::new(5, 5);
+        // insert entities:
+        map.insert(Cell::new(3, 3), Entity::Enemy);
+        map.insert(Cell::new(1, 0), Entity::Hero);
+        // draw map to the raw stdout:
+        map.draw(&mut stdout()).expect("should draw!");
+    }
+}
+
+// 🦀!⭐!!!
