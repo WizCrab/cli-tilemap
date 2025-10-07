@@ -1,6 +1,6 @@
 [package]
 name = "cli-tilemap"
-version = "0.1.0"
+version = "0.1.1"
 description = "Library, that provides basic functionality of Tilemap for CLI-based games!"
 repository = "https://github.com/WizCrab/cli-tilemap"
 keywords = ["tilemap", "grid", "field", "cli", "2D"]
@@ -12,4 +12,4 @@ edition = "2024"
 
 [dependencies]
 crossterm = "0.29.0"
-grid-math = "0.2.4"
+grid-math = "0.2.6"
