@@ -254,12 +254,12 @@ where
     pub fn draw<W: io::Write>(&self, stdout: &mut W) -> io::Result<()> {
         execute!(
             stdout,
-            Print("\n".repeat(self.formatting.top_indent as usize))
+            Print("\n\r".repeat(self.formatting.top_indent as usize))
         )?;
         for row in self.grid().rows() {
             execute!(
                 stdout,
-                Print("\n".repeat(self.formatting.row_spacing as usize)),
+                Print("\n\r".repeat(self.formatting.row_spacing as usize)),
                 Print("\t".repeat(self.formatting.left_indent as usize))
             )?;
             for cell in row.cells() {
@@ -269,11 +269,11 @@ where
                     PrintStyledContent(self.get(&cell).unwrap_or(&T::default()).tile())
                 )?;
             }
-            execute!(stdout, Print("\n"))?;
+            execute!(stdout, Print("\n\r"))?;
         }
         execute!(
             stdout,
-            Print("\n".repeat(self.formatting.bottom_indent as usize))
+            Print("\n\r".repeat(self.formatting.bottom_indent as usize))
         )?;
         Ok(())
     }
@@ -304,17 +304,21 @@ where
     /// println!("{map}");
     /// ```
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{}", "\n".repeat(self.formatting.top_indent as usize))?;
+        write!(f, "{}", "\n\r".repeat(self.formatting.top_indent as usize))?;
         for row in self.grid().rows() {
-            write!(f, "{}", "\n".repeat(self.formatting.row_spacing as usize))?;
+            write!(f, "{}", "\n\r".repeat(self.formatting.row_spacing as usize))?;
             write!(f, "{}", "\t".repeat(self.formatting.left_indent as usize))?;
             for cell in row.cells() {
                 write!(f, "{}", " ".repeat(self.formatting.tile_spacing as usize))?;
                 write!(f, "{}", self.get(&cell).unwrap_or(&T::default()).tile())?;
             }
-            writeln!(f)?;
+            write!(f, "\n\r")?;
         }
-        write!(f, "{}", "\n".repeat(self.formatting.bottom_indent as usize))?;
+        write!(
+            f,
+            "{}",
+            "\n\r".repeat(self.formatting.bottom_indent as usize)
+        )?;
         Ok(())
     }
 }
@@ -485,6 +489,7 @@ where
 mod tests {
     use super::*;
     use crossterm::style::Stylize;
+    use crossterm::terminal::{disable_raw_mode, enable_raw_mode};
     use std::io::stdout;
 
     // declare Entity enum
@@ -508,14 +513,22 @@ mod tests {
     }
 
     #[test]
-    fn draw_tilemap() {
+    fn draw_tilemap() -> io::Result<()> {
         // create 5x5 tilemap:
         let mut map: TileMap<Entity> = TileMap::new(5, 5);
         // insert entities:
         map.insert(Cell::new(3, 3), Entity::Enemy);
         map.insert(Cell::new(1, 0), Entity::Hero);
+        // test in terminal raw mode:
+        enable_raw_mode()?;
         // draw map to the raw stdout:
-        map.draw(&mut stdout()).expect("should draw!");
+        map.draw(&mut stdout())?;
+        // print using formatting:
+        println!("{map}");
+        // return terminal to the normal mode:
+        disable_raw_mode()?;
+
+        Ok(())
     }
 }
 
